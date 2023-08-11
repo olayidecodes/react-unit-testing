@@ -34,7 +34,7 @@ describe("Counter", () => {
 });
 
 describe("Counter Snapshot", () => {
-  it("should matches DOM Snapshot", () => {
+  it("should match DOM Snapshot", () => {
     const tree = renderer.create(<Counter />).toJSON();
     expect(tree).toMatchSnapshot();
   });
